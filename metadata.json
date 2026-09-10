@@ -1,0 +1,6 @@
+{
+  "name": "Volatus Capital",
+  "description": "Official web portal for Volatus Capital - institutional Forex, Gold, and Crypto trading setups, broker VIP verification, and Smart Money Concepts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

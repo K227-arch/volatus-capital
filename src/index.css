@@ -1,0 +1,199 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-editorial {
+    font-family: 'Newsreader', 'Playfair Display', Georgia, Cambria, serif;
+  }
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0c10;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232733;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #363d50;
+}
+
+/* ========================================================================= */
+/* LIGHT MODE CLASS OVERRIDES                                                */
+/* ========================================================================= */
+
+html.light,
+html.light body {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+  color-scheme: light;
+}
+
+html.light ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Background canvas in light mode */
+html.light .bg-\[\#070912\],
+html.light .bg-\[\#0b0c10\],
+html.light .bg-\[\#0c0d12\],
+html.light .bg-\[\#0e1017\],
+html.light .bg-\[\#0c2a2b\],
+html.light .bg-\[\#10121d\] {
+  background-color: #f8fafc !important;
+}
+
+/* Cards & Surface Containers in light mode */
+html.light .bg-\[\#12141d\],
+html.light .bg-\[\#151722\],
+html.light .bg-\[\#141622\],
+html.light .bg-\[\#161824\],
+html.light .bg-\[\#161826\],
+html.light .bg-\[\#181a26\],
+html.light .bg-\[\#111524\],
+html.light .bg-\[\#151826\],
+html.light .bg-\[\#141624\],
+html.light .bg-\[\#1c1d2e\],
+html.light .bg-\[\#0d101a\],
+html.light .bg-\[\#0d1c24\],
+html.light .bg-\[\#181528\],
+html.light .bg-\[\#161a29\],
+html.light .bg-\[\#1a1728\] {
+  background-color: #ffffff !important;
+}
+
+/* Gradient Hero Containers */
+html.light .from-\[\#151722\],
+html.light .from-\[\#121626\],
+html.light .from-\[\#141824\],
+html.light .from-\[\#181528\],
+html.light .from-\[\#111524\] {
+  --tw-gradient-from: #f1f5f9 !important;
+  --tw-gradient-to: #ffffff !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+/* Text colors in light mode */
+html.light .text-white,
+html.light .text-slate-100 {
+  color: #0f172a !important;
+}
+
+html.light .text-slate-200,
+html.light .text-slate-300 {
+  color: #334155 !important;
+}
+
+html.light .text-slate-400 {
+  color: #64748b !important;
+}
+
+html.light .text-slate-500 {
+  color: #94a3b8 !important;
+}
+
+/* Borders in light mode */
+html.light .border-white\/\[0\.04\],
+html.light .border-white\/\[0\.06\],
+html.light .border-white\/\[0\.08\],
+html.light .border-white\/\[0\.1\],
+html.light .border-white\/10,
+html.light .border-white\/15,
+html.light .border-white\/20,
+html.light .border-white\/25 {
+  border-color: #e2e8f0 !important;
+}
+
+/* Semi-transparent overlays in light mode */
+html.light .bg-white\/5 {
+  background-color: #f1f5f9 !important;
+}
+
+html.light .bg-white\/10 {
+  background-color: #e2e8f0 !important;
+}
+
+html.light .bg-white\/15,
+html.light .bg-white\/\[0\.12\] {
+  background-color: #cbd5e1 !important;
+}
+
+/* Inputs, Selects & Textareas in light mode */
+html.light input,
+html.light select,
+html.light textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Shadows in light mode */
+html.light .shadow-2xl {
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.08) !important;
+}
+
+html.light .shadow-xl,
+html.light .shadow-lg {
+  box-shadow: 0 4px 20px 0 rgba(15, 23, 42, 0.06) !important;
+}
+
+/* Header & Nav in light mode */
+html.light #main-navbar {
+  background-color: rgba(255, 255, 255, 0.92) !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+}
+
+html.light #desktop-nav {
+  background-color: #f1f5f9 !important;
+  border-color: #e2e8f0 !important;
+}
+
+html.light #desktop-nav button.text-white {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+html.light #desktop-nav button.text-slate-400 {
+  color: #64748b !important;
+}
+
+html.light #desktop-nav button.text-slate-400:hover {
+  color: #0f172a !important;
+}
+
+html.light #mobile-menu-drawer {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+html.light #mobile-menu-drawer button {
+  color: #334155 !important;
+}
+
+html.light #mobile-menu-drawer button:hover {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+

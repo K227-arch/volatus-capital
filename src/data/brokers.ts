@@ -1,0 +1,58 @@
+import { BrokerPartner } from '../types';
+
+export const brokerPartners: BrokerPartner[] = [
+  {
+    id: 'exness',
+    name: 'Exness',
+    logo: '⚡',
+    badge: 'Recommended Partner',
+    rating: 4.9,
+    minDeposit: '$10',
+    leverage: '1:Unlimited',
+    spread: 'From 0.0 pips',
+    affiliateUrl: 'https://one.exness-track.com/a/volatus',
+    description: 'The world’s largest retail broker with ultra-fast instant automated withdrawals, zero overnight swap fees on Gold & Crypto, and raw spreads.',
+    benefits: [
+      'Instant automated withdrawals 24/7 (zero manual delays)',
+      'Free VIP Signals access as long as your account is active',
+      'Ultra-low raw spread on XAUUSD & BTCUSD',
+      'Available across Africa, Asia, Latin America, and Europe',
+    ],
+  },
+  {
+    id: 'hfm',
+    name: 'HFM (HotForex)',
+    logo: '🛡️',
+    badge: 'Zero Spread Pro',
+    rating: 4.8,
+    minDeposit: '$50',
+    leverage: 'Up to 1:2000',
+    spread: 'From 0.1 pips',
+    affiliateUrl: 'https://www.hfm.com/?refid=volatus',
+    description: 'Tier-1 regulated multi-asset broker offering ultra-competitive spreads, 100% deposit bonus eligibility, and deep liquidity.',
+    benefits: [
+      'Regulated by FCA, CySEC, and FSCA',
+      'Zero swap fees on major indices and metals',
+      'High-speed execution with MT4 & MT5',
+      'Complimentary Volatus VIP Bot pass with $50 deposit',
+    ],
+  },
+  {
+    id: 'icmarkets',
+    name: 'IC Markets',
+    logo: '💎',
+    badge: 'True ECN',
+    rating: 4.8,
+    minDeposit: '$200',
+    leverage: 'Up to 1:500',
+    spread: 'From 0.0 pips',
+    affiliateUrl: 'https://www.icmarkets.com/?camp=volatus',
+    description: 'Global ECN powerhouse famous for scalpers and algorithmic traders, offering tightest interbank institutional liquidity.',
+    benefits: [
+      'True institutional ECN pricing',
+      'Sub-millisecond trade execution speed',
+      'Depth of Market (DoM) visualizer in cTrader / MT5',
+      'Volatus Automated Copy-Trading compatible',
+    ],
+  },
+];
